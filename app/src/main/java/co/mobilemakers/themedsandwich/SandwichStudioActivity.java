@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -109,9 +110,12 @@ public class SandwichStudioActivity extends ActionBarActivity {
     }
 
     protected void clearOptions() {
+        ((RadioGroup)findViewById(R.id.group_bread)).clearCheck();
+        /*
         mRadioWheat.setChecked(false);
         mRadioWhite.setChecked(false);
         mRadioRye.setChecked(false);
+        */
 
         mCheckTomato.setChecked(false);
         mCheckLattuce.setChecked(false);

@@ -24,6 +24,9 @@
             android:name=".ResultsActivity"
             android:label="@string/title_activity_results" >
         </activity>
+        <activity android:name=".AppSettingsActivity"
+            android:label="@string/activity_app_settings_title"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
     </application>
 
 </manifest>

@@ -1,6 +1,8 @@
 package co.mobilemakers.themedsandwich;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
@@ -86,9 +88,23 @@ public class ResultsActivity extends ActionBarActivity {
         mTextResult.setText(result);
     }
 
+    private void controlsToVars() {
+        mTextTitle = (TextView)findViewById(R.id.text_sandwich_total);
+        mTextResult = (TextView)findViewById(R.id.text_sandwich_result);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String colorSet = sharedPreferences.getString("color_preference", getResources().getString(R.string.burger_brown));
+        if (colorSet.equals(getResources().getString(R.string.burger_brown))) {
+            setTheme(R.style.AppTheme);
+        }
+        else {
+            setTheme(R.style.AltTheme);
+        }
         setContentView(R.layout.activity_results);
 
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
@@ -99,11 +115,6 @@ public class ResultsActivity extends ActionBarActivity {
         controlsToVars();
 
         showResults();
-    }
-
-    private void controlsToVars() {
-        mTextTitle = (TextView)findViewById(R.id.text_sandwich_total);
-        mTextResult = (TextView)findViewById(R.id.text_sandwich_result);
     }
 
 /*

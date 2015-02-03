@@ -27,5 +27,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="text_sandwich_total">%1$d sandwiches:</string>
     <string name="sandwich_each">Sandwich %1$d:</string>
+    <string name="choose_color">Choose a color</string>
+    <string name="burger_brown">Burger Brown</string>
+    <string name="pig_pink">Pig Pink</string>
+    <string name="pref_category_customization">Preferences</string>
+    <string name="pref_color_title">Order confirmation color</string>
+    <string name="pref_color_summary">Color set used in the confirmation screen</string>
+    <string name="activity_app_settings_title">Settings</string>
 
 </resources>

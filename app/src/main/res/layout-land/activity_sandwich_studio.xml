@@ -22,6 +22,7 @@
         android:id="@+id/text_bread" />
 
     <RadioGroup
+        android:id="@+id/group_bread"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">

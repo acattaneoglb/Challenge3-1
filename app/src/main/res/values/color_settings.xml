@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="color_options">
+        <item>@string/burger_brown</item>
+        <item>@string/pig_pink</item>
+    </string-array>
+</resources>

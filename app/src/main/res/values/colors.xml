@@ -8,4 +8,8 @@
   <color name="secondary_text">#727272</color>
   <color name="icons">#FFFFFF</color>
   <color name="divider">#B6B6B6</color>
+
+    <color name="primary_alt">#ffd93a4b</color>
+    <color name="primary_dark_alt">#ffb43141</color>
+    <color name="accent_alt">#ffd2c115</color>
 </resources>
